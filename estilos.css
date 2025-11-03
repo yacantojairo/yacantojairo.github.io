@@ -1,0 +1,316 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background: #f4f4f4;
+  color: #333;
+  line-height: 1.5;
+}
+
+header {
+  background: #4d7ed8;
+  color: #fff;
+  text-align: center;
+  padding: 15px 10px;
+}
+
+header h1 {
+  margin-bottom: 5px;
+  font-size: 26px;
+}
+
+nav {
+  margin-top: 8px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 6px;
+  font-weight: bold;
+  font-size: 14px;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+main,
+section,
+.contenido {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.bienvenida {
+  max-width: 1100px;
+  margin: 20px auto;
+  background: #fff;
+  padding: 25px 20px;
+  text-align: center;
+  border-radius: 6px;
+  box-shadow: 0 0 6px rgba(0,0,0,0.05);
+}
+
+.bienvenida h1 {
+  color: #4d7ed8;
+  margin-bottom: 10px;
+}
+
+.bienvenida p {
+  margin-bottom: 15px;
+}
+
+h2, h3, h4 {
+  color: #4d7ed8;
+  margin-bottom: 10px;
+}
+
+.boton,
+a.boton {
+  display: inline-block;
+  background: #4d7ed8;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+.boton:hover,
+a.boton:hover {
+  background: #345ca7;
+}
+
+.categorias {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.categoria {
+  background: #f9fbff;
+  border: 1px solid #d6e2ff;
+  border-radius: 6px;
+  padding: 15px 10px;
+  text-align: center;
+}
+
+.categoria img {
+  max-width: 120px;
+  margin: 8px auto;
+  display: block;
+}
+
+.lista-productos {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.producto {
+  background: #f9fbff;
+  border: 1px solid #e0e8ff;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+}
+
+.producto img {
+  max-width: 120px;
+  margin: 8px auto 0;
+  display: block;
+}
+
+.producto h3 {
+  margin-bottom: 5px;
+}
+
+.productos,
+.ventajas,
+.testimonios {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 15px;
+  margin-top: 15px;
+}
+
+.ventaja,
+.testimonio {
+  background: #f9fbff;
+  border: 1px solid #e0e8ff;
+  border-radius: 6px;
+  padding: 12px;
+  text-align: center;
+}
+
+.ventaja img,
+.testimonio img {
+  max-width: 100px;
+  display: block;
+  margin: 0 auto 8px;
+}
+
+form {
+  max-width: 520px;
+  margin: 10px auto 0;
+  background: #fff;
+}
+
+form p {
+  margin-bottom: 10px;
+}
+
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="number"],
+select,
+textarea {
+  width: 100%;
+  padding: 7px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-family: inherit;
+  font-size: 14px;
+}
+
+input[type="submit"] {
+  width: auto;
+  background: #4d7ed8;
+  color: #fff;
+  border: none;
+  padding: 8px 14px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+input[type="submit"]:hover {
+  background: #345ca7;
+}
+
+.agradecimiento {
+  margin-top: 20px;
+  background: #e6f4ff;
+  border: 1px solid #c2def5;
+  padding: 12px;
+  border-radius: 4px;
+  text-align: center;
+}
+
+.mapa,
+iframe {
+  border-radius: 6px;
+}
+
+main iframe {
+  border: 0;
+  border-radius: 6px;
+  display: block;
+  width: 100%;
+  max-width: 800px;
+  margin: 15px auto;
+}
+
+ul {
+  margin-left: 18px;
+  margin-bottom: 10px;
+}
+
+.datos li {
+  margin-bottom: 6px;
+}
+
+footer {
+  text-align: center;
+  padding: 15px 10px;
+  background: #4d7ed8;
+  color: #fff;
+  margin-top: 30px;
+}
+
+footer .links a,
+footer .links-footer a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 4px;
+  font-weight: bold;
+  font-size: 13px;
+}
+
+footer .links a:hover,
+footer .links-footer a:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 600px) {
+  header h1 {
+    font-size: 22px;
+  }
+
+  nav a {
+    display: inline-block;
+    margin: 3px 5px;
+  }
+
+  main,
+  section,
+  .bienvenida {
+    margin: 10px;
+    padding: 15px;
+  }
+}
+
+.productos a.boton,
+.ventajas a.boton,
+.testimonios a.boton {
+  display: block;
+  background-color: #4d7ed8;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 4px;
+  text-decoration: none;
+  font-weight: bold;
+  width: fit-content;
+  margin: 15px auto 0; 
+  grid-column: 1 / -1; 
+  text-align: center;
+}
+
+.productos a.boton:hover,
+.ventajas a.boton:hover,
+.testimonios a.boton:hover {
+  background-color: #335ba2;
+}
+
+.redes-sociales, 
+.redes-sociales p, 
+.redes-sociales h3,
+main h3,
+main p strong {
+  text-align: center;
+}
+
+.redes-sociales a {
+  display: inline-block;
+  margin: 4px 6px;
+  color: #4d7ed8;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.redes-sociales a:hover {
+  text-decoration: underline;
+}
+
+main p strong {
+  display: block;
+  margin: 5px auto;
+}

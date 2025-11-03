@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Despensa Yacanto</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="index.html">Inicio</a> |
+      <a href="Acerca De.html">Acerca De</a> |
+      <a href="productos.html">Productos</a> |
+      <a href="contacto.html">Contacto</a> |
+      <a href="Desarrollador.html">Desarrollador</a> |
+      <a href="Ubicacion.html">Ubicacion</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Complete el formulario para procesar el pedido</h2>
+    <form action="procesar_pedido.php" method="post">
+      <p>Cliente: <input type="text" name="nombre" placeholder="Ingrese su nombre" required></p>
+      <p>Teléfono: <input type="tel" name="telefono" placeholder="Ingrese su número de teléfono" pattern="[0-9]{10}" required></p>
+      Seleccione su producto:
+       <select name="producto">
+       <option value="Harina"> Harina</option>
+       <option value="Gas de 10"> Gas de 10</option>
+       <option value="Gas de 15"> Gas de 15</option>
+       </select>
+       <br>
+       Seleccione su medio de pago:
+       <select name="pago">
+       <option value="Transferencia"> Transferencia</option>
+       <option value="Efectivo"> Efectivo</option>
+        </select>
+      <p>Elija la cantidad: <input type="number" name="cantidad" placeholder="Ingrese la cantidad de productos" min="0" max="5"></p>
+      <p>Direccion:</p>
+      <textarea name="direccion" placeholder="Escriba su direccion" rows="4" cols="20" required></textarea>
+      <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <div class="agradecimiento">
+      <h3>!Muchas gracias por su compra!</h3>
+      <p>A la brevedad procesamos su producto y lo llevamos a su domicilio.</p>
+    </div>
+    <h3>Telefonos de contacto</h3>
+    <p><strong>2645802161</strong></p>
+    <p><strong>2645802161</strong></p>
+    <p><strong>2645802161</strong></p>
+  </main>
+
+  <footer>
+    <p>Despensa Yacanto - Página creada por Jairo Yacanto 2025</p>
+    <div class="links-footer">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+  </footer>
+
+</body>
+</html>

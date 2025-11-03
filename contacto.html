@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contacto - Despensa Yacanto</title>
+  <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+
+  <header>
+    <h1>Contacto</h1>
+    <nav>
+      <a href="index.html">Inicio</a> |
+      <a href="Acerca De.html">Acerca De</a> |
+      <a href="productos.html">Productos</a> |
+      <a href="contacto.html">Contacto</a> |
+      <a href="Desarrollador.html">Desarrollador</a> |
+      <a href="Ubicacion.html">Ubicacion</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Envíanos tu consulta y la responderemos a la brevedad</h2>
+    <form action="procesar_contacto.php" method="post">
+      <p>Nombre: <input type="text" name="nombre" placeholder="Ingrese su nombre" required></p>
+      <p>Correo: <input type="email" name="correo" placeholder="Ingrese su correo electrónico" required></p>
+      <p>Teléfono: <input type="tel" name="telefono" placeholder="Ingrese su número de teléfono" pattern="[0-9]{10}" required></p>
+      <p>Asunto: <input type="text" name="asunto" placeholder="Ingrese el asunto" required></p>
+      <p>Mensaje:</p>
+      <textarea name="mensaje" placeholder="Escriba su mensaje" rows="4" cols="20" required></textarea>
+      <p><input type="submit" value="Enviar"></p>
+    </form>
+
+    <div class="redes-sociales">
+      <h3>Redes sociales</h3>
+      <p>
+        <a href="https://instagram.com" target="_blank" rel="noopener">Instagram</a> |
+        <a href="https://facebook.com" target="_blank" rel="noopener">Facebook</a> |
+        <a href="https://whatsapp.com" target="_blank" rel="noopener">Whatsapp</a> |
+      </p>
+    </div>
+    <h3>Telefonos de contacto</h3>
+    <p><strong>| 2645802161 |</strong></p>
+    <p><strong>| 2645802161 |</strong></p>
+    <p><strong>| 2645802161 |</strong></p>
+  </main>
+
+  <footer>
+    <p>Despensa Yacanto - Página creada por Jairo Yacanto 2025</p>
+    <div class="links-footer">
+      <a href="index.html">Inicio</a>
+      <a href="productos.html">Productos</a>
+      <a href="contacto.html">Contacto</a>
+    </div>
+  </footer>
+
+</body>
+</html>
